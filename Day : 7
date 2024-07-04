@@ -1,4 +1,7 @@
-# Day: 7 Exercise 1: Calculator using Python. By Me.
+# Day: 7 Exercise 1: Calculator using Python.
+
+# Operators
+# Python has different types of operators for different operations. To create a calculator we require arithmetic operators.
 
 # print(15+6)
 # print(15-6)
