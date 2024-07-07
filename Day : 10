@@ -1,5 +1,10 @@
 # Day : 10 Taking User Input in Python
 
+# In python, we can take user input directly by using input() function.This input function gives a return value as string/character hence we have to pass that into a variable
+
+# Syntax:
+# variable=input()
+
 # print("Enter Your Name:")
 a = input("Enter Your Name:")
 print("My Name is", a)
