@@ -1,11 +1,23 @@
 # Day : 13 String Method (Operation)
 
+# Python provides a set of built-in methods that we can use to alter and modify the strings.
+
 # --> String are immutable
 name = "Karan"
 print(len(name))
+# upper() :
+# The upper() method converts a string to upper case.
 print(name.upper()) # --> name.upper() return a new string, turns all letter of the string in a Upper case, it is not change a name string, it make a copy of the name string as a new string
 
+# lower()
+# The lower() method converts a string to lower case.
 print(name.lower()) # --> turn all letter in lower case as a new strig
+
+# strip() :
+# The strip() method removes any white spaces before and after the string.
+# the rstrip() removes any trailing characters.
+sting1 = " Silver Spoon "
+print(sting1.strip)
 
 # rstrip() removes any trailing characters
 str1 = "Hello !!!"
@@ -17,10 +29,11 @@ print(name.rstrip("!")) #but in leading it can't be strip
 st = "Silver Spoon Spring Sprint"
 print(st.replace("Sp", "M"))
 
-# split() method splits the given string at the specified instance and returns the separated
+# split() method splits the given string at the specified instance and returns the separated strings as list items.
 print(str1.split(" "))
 
 # capatalize() 
+# The capitalize() method turns only the first character of the string to uppercase and the rest other characters of the string are turned to lowercase. The string has no effect if the first character is already uppercase.
 blogHeading = "introduction tO Chess"
 print(blogHeading.capitalize()) # to convert capital First letter in a string, only the first character of the string to uppercase and the rest other characters of the string are truned to lowercase. The string has no effect if the first character is  already uppercase.
 
@@ -28,6 +41,10 @@ print(blogHeading.capitalize()) # to convert capital First letter in a string, o
 string = "Welcome to the Console!!!"
 print(len(string))
 print(len(string.center(100))) #100 means shift 100 to the left of the monitor
+
+# We can also provide padding character. It will fill the rest of the fill characters provided by the user.
+sting2 = "Welcome to the Console!!!"
+print(sting2.center(50, "."))
 
 # count() method returns the number of times the given value has occurred the given string
 countstring = string.count("o")
@@ -40,6 +57,15 @@ print(string.endswith("!!!"))
 s = "He's name is Dan. He is an honest man."
 print(s.find("is")) # return first occurence of is
 print(s.find("ishh")) # return -1 because of ishh is not present in the string 
+
+# index() :
+# The index() method searches for the first occurrence of the given value and returns the index where it is present. If given value is absent from the string then raise an exception.
+sting3 = "He's name is Dan. Dan is an honest man."
+print(sting3.index("Dan"))
+
+# As we can see, this method is somewhat similar to the find() method. The major difference being that index() raises an exception if value is absent whereas find() does not.
+sting4 = "He's name is Dan. Dan is an honest man."
+print(sting4.index("Daniel"))
 
 # isalnum() method returns True only if the entire string only consists of A-Z, a-z, 0-9. If any other characters or puntuation are present, then it returns False.
 stir = "WelcomeToTheConsole"
