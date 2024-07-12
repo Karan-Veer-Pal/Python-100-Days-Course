@@ -2,6 +2,8 @@
 
 # Questions : Create a python Program capaable of greeting you with Good Mornin, Good Attention & Good Evening. Your program should use time module to get the current hour. Here, is a simple program and documentation link for you. 
 
+# By Me :
+
 import time 
 timestamp = time.strftime('%H:%M:%S')
 print(timestamp)
