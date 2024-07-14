@@ -3,7 +3,16 @@
 
 # for loop can iterate over a sequence of iterable objects in python. Iterating over a sequence is nothing but iterating over strings, lists, tuples, sets and dictionaries.
 
-# Example of string
+# Introduction to Loops
+# Sometimes a programmer wants to execute a group of statements a certain number of times. This can be done using loops. Based on this loops are further classified into following main types;
+
+# for loop
+# while loop
+
+# The for Loop
+# for loops can iterate over a sequence of iterable objects in python. Iterating over a sequence is nothing but iterating over strings, lists, tuples, sets and dictionaries.
+
+# Example : iterating over a string:
 
 name = 'Karan Veer Pal'
 for i in name:
@@ -19,7 +28,7 @@ for i in name:
 
 print("\n")
 
-# Example of list
+# Example: iterating over a list:
         
 colors = ["Red", "Green", "Blue", "Yellow"]
 for color in colors:
@@ -30,6 +39,8 @@ for color in colors:
 print("\n")
 
 #range() --> what if we do not want to iterate over a sequence? What if want to use for loop for a specific number of times?
+
+# Here, we can use the range() function.
 
 # the range is go for n-1
 
