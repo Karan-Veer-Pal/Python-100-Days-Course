@@ -9,6 +9,16 @@
 # Required Arguments
 
 # Method One:
+# Default arguments:
+
+def name(fname, mname = "Jhon", lname = "Whatson"):
+    print("Hello,", fname, mname, lname)
+
+name("Amy")
+
+print("\n")
+
+# Method One:
 def average(a, b): 
   print("The average is ", (a+b)/2)
   
@@ -16,8 +26,6 @@ average(4, 6) # Function calling
 
 print("\n")
 
-# Method Two:
-# Default arguments:
 # We can provide a default value while creating a function. This way the function assumes a default value even if a value is not provided in the function call for that argument.
 
 # def average(a = 9, b = 4): but when we give the argument in function calling time it have the high priority to exucute the function
@@ -43,13 +51,28 @@ name("Karan") # Function calling
 
 print("\n")
 
+# Method Two:
 # Keyword arguments:
 # We can provide arguments with key = value, this way the interpreter recognizes the arguments by the parameter name. Hence, the the order in which the arguments are passed does not matter.
+
+def name(fname, mname, lname):
+    print("Hello,", fname, mname, lname)
+
+name(mname = "Peter", lname = "Wesker", fname = "Jade")
+
+print("\n")
 
 # average (b = 9, a = 21) --> We can give the argument is any order, means not having a Sequence
 
 # Required arguments:
 # In case we don’t pass the arguments with a key = value syntax, then it is necessary to pass the arguments in the correct positional order and the number of arguments passed should match with actual function definition. --> Cumplusory to give arguments
+
+def name(fname, mname, lname):
+    print("Hello,", fname, mname, lname)
+
+name("Peter", "Ego", "Quill")
+
+print("\n")
 
 def a(x, y, z = 1):
   print("The average is ", (x+y+z)/2)
@@ -60,6 +83,18 @@ print("\n")
 
 # Variable-length arguments:
 # Sometimes we may need to pass more arguments than those defined in the actual function. This can be done using variable-length arguments.
+
+# There are two ways to achieve this:
+
+# Arbitrary Arguments:
+# While creating a function, pass a * before the parameter name while defining the function. The function accesses the arguments by processing them in the form of tuple.
+
+def name(*name):
+    print("Hello,", name[0], name[1], name[2])
+
+name("James", "Buchanan", "Barnes")
+
+print("\n")
 
 # Actually it take a numbers in a tuple
 def averg(*numbers): # * means take as tuple agruments
@@ -73,6 +108,8 @@ averg(5,6,8,2,1) # Function calling
 
 print("\n")
 
+# Keyword Arbitrary Arguments:
+# While creating a function, pass a * before the parameter name while defining the function. The function accesses the arguments by processing them in the form of dictionary.
 # When we want to take a arguments as a dictionary
 def name(**name): # ** means take as dictionary agruments
   print(type(name)) # use for check the type
