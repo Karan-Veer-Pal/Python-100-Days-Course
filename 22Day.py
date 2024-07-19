@@ -14,6 +14,7 @@ print("\n")
 
 # List Index
 # Each item/element in a list has its own unique index. This index can be used to access any particular item from the list. The first item has index [0], second item has index [1], third item has index [2] and so on.
+
 # Accessing list items
 # We can access list items by using its index with the square bracket syntax []. For example colors[0] will give "Red", colors[1] will give "Green" and so on...
 marks = ["Avinash", 56, "Abhishek", 78, "Karan", 34, True, False]
@@ -80,5 +81,19 @@ lst = [i for i in range(4)]
 print(lst)
 lst = [i*i for i in range(4) if i % 2 == 0]
 print(lst)
+
+# Syntax:
+# Listt = [Expression(item) for item in iterable if Condition]
+
+# Expression: It is the item which is being iterated.
+
+# Iterable: It can be list, tuples, dictionaries, sets, and even in arrays and strings.
+
+# Condition: Condition checks if the item should be added to the new list or not.
+
+# Example 1: Accepts items with the small letter “o” in the new list
+names = ["Milo", "Sarah", "Bruno", "Anastasia", "Rosa"]
+namesWith_O = [item for item in names if "o" in item]
+print(namesWith_O)
 
 print("\n")
