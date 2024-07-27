@@ -1,4 +1,4 @@
-#Day : 29 Docstrings and PEP 8 
+#Day : 29 Docstrings and PEP 8
 
 # Python docstrings are the string literals that appear right after the definition of a function, method, class, or module.
 
