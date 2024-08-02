@@ -1,4 +1,4 @@
-# Day : 35 For Loop with Else 
+# Day : 35 For Loop with Else
 
 # As you have learned before, the else clause is used along with the if statement.
 
